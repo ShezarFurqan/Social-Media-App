@@ -26,6 +26,7 @@ const SnapContextProvider = (props) => {
   const [onlineUsers, setOnlineUsers] = useState([])
 
 
+
   const connectSocket = () => {
     if (!currentUser || socket?.connected) return;
     
