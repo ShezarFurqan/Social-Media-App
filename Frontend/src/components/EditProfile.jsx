@@ -2,7 +2,6 @@ import React, { useContext, useState } from 'react';
 import { toast } from 'react-toastify';
 import { SnapContext } from '../context/SnapContext';
 import axios from 'axios';
-import { backendUrl } from '../../../../Enchantique jewelio/admin/src/App';
 import { assets } from '../assets/assets';
 
 const EditProfile = ({ id, setVisible, isTrue}) => {
@@ -10,7 +9,7 @@ const EditProfile = ({ id, setVisible, isTrue}) => {
     const [bio, setBio] = useState('');
     const [profilePic, setProfilePic] = useState(null);
     const [banner, setBanner] = useState(null);
-    const { currentUser } = useContext(SnapContext);
+    const { currentUser, backendUrl } = useContext(SnapContext);
 
 
 
