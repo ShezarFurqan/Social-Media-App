@@ -26,6 +26,11 @@ const SnapContextProvider = (props) => {
   const [onlineUsers, setOnlineUsers] = useState([])
 
 
+  useEffect(()=>{
+    console.log(backendUrl)
+  },[backendUrl])
+
+
 
   const connectSocket = () => {
     if (!currentUser || socket?.connected) return;
